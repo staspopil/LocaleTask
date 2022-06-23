@@ -17,18 +17,7 @@ public class App
     public static void main( String[] args )
     {
         System.out.println( "Hello World!" );
-        localeList.add(locale);
-        localeList.add(new Locale("fr", "FR"));
-        localeList.add(new Locale("ja", "JP"));
-        localeList.add(new Locale("ru", "RU"));
-        localeList.add(new Locale("fr", "CA"));
-
-        for(Locale locale : localeList)
-        {
-            System.out.println(locale.getCountry() + " " + locale.getLanguage());
-            formatString(locale, new BigDecimal("123124.123123"));
-        }
-
+        formatString(locale, new BigDecimal("123124.123123"));
     }
 
     public static String formatString(Locale locale, BigDecimal bigDecimal)
